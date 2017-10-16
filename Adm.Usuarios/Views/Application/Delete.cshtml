@@ -1,18 +1,18 @@
 ﻿@model A.Datos.Models.Application
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Eliminar";
 }
 
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-sm-4">
-        <h2>Borrar</h2>
+        <h2>Eliminar</h2>
         <ol class="breadcrumb">
             <li>
                 @Html.ActionLink("Sistemas", "Index")
             </li>
             <li class="active">
-                <strong>Borrar</strong>
+                <strong>Eliminar</strong>
             </li>
         </ol>
     </div>
@@ -29,10 +29,10 @@
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Sistema</h5>
+                    <h5>Eliminar registro</h5>
                 </div>
                 <div class="ibox-content">
-				<h4 class="text-danger">Esta seguro que desea borrar?</h4>
+				<h4 class="text-danger">¿Está seguro que desea borrar este registro?</h4>
 				 <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.ApplicationName)
@@ -48,8 +48,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Borrar" class="btn btn-primary" />
-            @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-white"})
+            <input type="submit" value="Eliminar" class="btn btn-primary" />
+            @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-white"})
         </div>
     }
 
