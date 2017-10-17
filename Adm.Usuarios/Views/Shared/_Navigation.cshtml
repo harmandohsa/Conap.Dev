@@ -24,10 +24,10 @@
                 </div>
             </li>
             <li class="@Html.IsSelected(controller: "Gallery")">
-                <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label" data-i18n="nav.gallery">Gallery</span><span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label" data-i18n="nav.gallery">Menu</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse @Html.IsSelected(controller: "Gallery", cssClass: "in")">
-                    <li class="@Html.IsSelected(action: "BasicGallery")"><a href="@Url.Action("BasicGallery", "Gallery")">Lightbox Gallery</a></li>
-                    <li class="@Html.IsSelected(action: "SlickCarusela")"><a href="@Url.Action("SlickCarusela", "Gallery")">Slick Carusela</a></li>
+                    <li class="@Html.IsSelected(action: "Index")"><a href="@Url.Action("Index", "Application")">Sistemas</a></li>
+                    <li class="@Html.IsSelected(action: "Index")"><a href="@Url.Action("Index", "Pages")">Páginas</a></li>
                     <li class="@Html.IsSelected(action: "BootstrapCarusela")"><a href="@Url.Action("BootstrapCarusela", "Gallery")">Bootstrap Carusela</a></li>
 
                 </ul>
