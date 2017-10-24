@@ -26,6 +26,8 @@ namespace A.Datos.Context
 
         public System.Data.Entity.DbSet<A.Datos.Models.Headquarter> Headquarters { get; set; }
 
+
+        public System.Data.Entity.DbSet<A.Datos.Models.Country> Countries { get; set; }
         public System.Data.Entity.DbSet<A.Datos.Models.Person> People { get; set; }
     }
 }

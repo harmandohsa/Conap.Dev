@@ -169,6 +169,7 @@
     <Compile Include="Controllers\ApplicationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
+    <Compile Include="Controllers\User_TypeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1610,6 +1611,11 @@
     <Content Include="Views\Pages\Details.cshtml" />
     <Content Include="Views\Pages\Edit.cshtml" />
     <Content Include="Views\Pages\Index.cshtml" />
+    <Content Include="Views\User_Type\Create.cshtml" />
+    <Content Include="Views\User_Type\Delete.cshtml" />
+    <Content Include="Views\User_Type\Details.cshtml" />
+    <Content Include="Views\User_Type\Edit.cshtml" />
+    <Content Include="Views\User_Type\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

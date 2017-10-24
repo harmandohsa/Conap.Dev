@@ -16,7 +16,7 @@ namespace A.Datos.Models
 
         public virtual ICollection<Municipality> Municipalities { get; set; }
 
-        public virtual ICollection<Person> Persons { get; set; }
+        
 
     }
 }

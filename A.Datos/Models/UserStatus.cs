@@ -14,6 +14,5 @@ namespace A.Datos.Models
         [Display(Name = "Estatus Usuario")]
         public string UserStatusName { get; set; }
 
-        public virtual ICollection<UserStatus> UserStatues { get; set; }
     }
 }

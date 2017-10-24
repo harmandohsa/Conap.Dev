@@ -174,6 +174,7 @@ namespace RecursosHumanos
             bundles.Add(new ScriptBundle("~/plugins/dataPicker").Include(
                       "~/Scripts/plugins/datapicker/bootstrap-datepicker.js"));
 
+
             // nouiSlider styles
             bundles.Add(new StyleBundle("~/plugins/nouiSliderStyles").Include(
                       "~/Content/plugins/nouslider/jquery.nouislider.css"));

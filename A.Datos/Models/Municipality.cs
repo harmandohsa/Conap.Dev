@@ -18,6 +18,5 @@ namespace A.Datos.Models
 
         public virtual Department Department { get; set; }
 
-        public virtual ICollection<Person> Persons { get; set; }
     }
 }

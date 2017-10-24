@@ -170,7 +170,6 @@
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Dependence.cs" />
-    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Headquarter.cs" />
     <Compile Include="Models\MaritalStatus.cs" />
@@ -179,7 +178,6 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\Profession.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserStatus.cs" />
     <Compile Include="Models\User_Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
