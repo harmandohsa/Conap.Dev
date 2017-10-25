@@ -14,7 +14,12 @@ namespace A.Datos.Models
         [Display(Name = "Departamento")]
         public string DepartamentName { get; set; }
 
+        public int CountrytId { get; set; }
+        public virtual Country Country { get; set; }
+
         public virtual ICollection<Municipality> Municipalities { get; set; }
+
+        
 
         
 

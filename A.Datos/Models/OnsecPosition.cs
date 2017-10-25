@@ -6,13 +6,13 @@ using System.Web;
 
 namespace A.Datos.Models
 {
-    public class Position
+    public class OnsecPosition
     {
         [Key]
-        public int PositionId { get; set; }
+        public int OnsecPositionId { get; set; }
         [Required]
-        [Display(Name = "Puesto")]
-        public string PositionName { get; set; }
+        [Display(Name = "Puesto Onsec")]
+        public string OnsecPositionName { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
     }

@@ -15,5 +15,8 @@ namespace A.Datos.Models
         [Display(Name = "País")]
         public string CountryName { get; set; }
 
+        public virtual ICollection<Department> Departments { get; set; }
+
+
     }
 }

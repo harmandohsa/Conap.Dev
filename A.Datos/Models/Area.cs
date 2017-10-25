@@ -18,5 +18,7 @@ namespace A.Datos.Models
         public int DependenceId { get; set; }
 
         public virtual Dependence Dependence { get; set; }
+
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

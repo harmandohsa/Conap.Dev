@@ -6,13 +6,13 @@ using System.Web;
 
 namespace A.Datos.Models
 {
-    public class Position
+    public class BudgetType
     {
         [Key]
-        public int PositionId { get; set; }
+        public int BudgetTypeId { get; set; }
         [Required]
-        [Display(Name = "Puesto")]
-        public string PositionName { get; set; }
+        [Display(Name = "Tipo de Contratación")]
+        public string BudgetTypeName { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
     }

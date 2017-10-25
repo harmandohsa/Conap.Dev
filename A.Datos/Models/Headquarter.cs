@@ -14,5 +14,8 @@ namespace A.Datos.Models
         [Display(Name = "Sede")]
         public string HeadquarterName { get; set; }
 
+        public virtual ICollection<Employee> Employees { get; set; }
+        
+
     }
 }

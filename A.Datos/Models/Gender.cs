@@ -14,6 +14,7 @@ namespace A.Datos.Models
         [Display(Name = "Genero")]
         public string GenderName { get; set; }
 
-        public virtual ICollection<Person> Persons { get; set; }
+        public virtual ICollection<Person> People { get; set; }
+        
     }
 }

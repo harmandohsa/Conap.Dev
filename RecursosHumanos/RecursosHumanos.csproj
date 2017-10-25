@@ -168,7 +168,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CountriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\MaritalStatusController.cs" />
+    <Compile Include="Controllers\MunicipalitiesController.cs" />
+    <Compile Include="Controllers\ProfessionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1475,16 +1477,26 @@
     <Content Include="Scripts\plugins\diff_match_patch\COPYING" />
     <Content Include="Scripts\plugins\justified-gallery\README.md" />
     <Content Include="Scripts\plugins\topojson\LICENSE" />
-    <Content Include="Views\People\Create.cshtml" />
-    <Content Include="Views\People\Delete.cshtml" />
-    <Content Include="Views\People\Details.cshtml" />
-    <Content Include="Views\People\Edit.cshtml" />
-    <Content Include="Views\People\Index.cshtml" />
     <Content Include="Views\Countries\Create.cshtml" />
     <Content Include="Views\Countries\Delete.cshtml" />
     <Content Include="Views\Countries\Details.cshtml" />
     <Content Include="Views\Countries\Edit.cshtml" />
     <Content Include="Views\Countries\Index.cshtml" />
+    <Content Include="Views\Municipalities\Create.cshtml" />
+    <Content Include="Views\Municipalities\Delete.cshtml" />
+    <Content Include="Views\Municipalities\Details.cshtml" />
+    <Content Include="Views\Municipalities\Edit.cshtml" />
+    <Content Include="Views\Municipalities\Index.cshtml" />
+    <Content Include="Views\MaritalStatus\Create.cshtml" />
+    <Content Include="Views\MaritalStatus\Delete.cshtml" />
+    <Content Include="Views\MaritalStatus\Details.cshtml" />
+    <Content Include="Views\MaritalStatus\Edit.cshtml" />
+    <Content Include="Views\MaritalStatus\Index.cshtml" />
+    <Content Include="Views\Professions\Create.cshtml" />
+    <Content Include="Views\Professions\Delete.cshtml" />
+    <Content Include="Views\Professions\Details.cshtml" />
+    <Content Include="Views\Professions\Edit.cshtml" />
+    <Content Include="Views\Professions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -14,5 +14,7 @@ namespace A.Datos.Models
         [Display(Name = "Estado Civil")]
         public string MaritalStatustName { get; set; }
 
+        public virtual ICollection<Person> People { get; set; }
+       
     }
 }

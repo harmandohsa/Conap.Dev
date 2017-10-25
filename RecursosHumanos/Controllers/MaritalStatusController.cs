@@ -11,112 +11,107 @@ using A.Datos.Models;
 
 namespace RecursosHumanos.Controllers
 {
-    public class PeopleController : Controller
+    public class MaritalStatusController : Controller
     {
         private ConapContext db = new ConapContext();
 
-        // GET: /People/
+        // GET: /MaritalStatus/
         public ActionResult Index()
         {
-            var people = db.People.Include(p => p.Gender);
-            return View(people.ToList());
+            return View(db.MaritalStatus.ToList());
         }
 
-        // GET: /People/Details/5
+        // GET: /MaritalStatus/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Person person = db.People.Find(id);
-            if (person == null)
+            MaritalStatus maritalStatus = db.MaritalStatus.Find(id);
+            if (maritalStatus == null)
             {
                 return HttpNotFound();
             }
-            return View(person);
+            return View(maritalStatus);
         }
 
-        // GET: /People/Create
+        // GET: /MaritalStatus/Create
         public ActionResult Create()
         {
-            ViewBag.GenderId = new SelectList(db.Genders, "GenderId", "GenderName");
             return View();
         }
 
-        // POST: /People/Create
+        // POST: /MaritalStatus/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="PersonaId,Name,LastName,Email,Phone,NumberId,PassportId,GenderId,BirthData")] Person person)
+        public ActionResult Create([Bind(Include="MaritalStatusId,MaritalStatustName")] MaritalStatus maritalStatus)
         {
             if (ModelState.IsValid)
             {
-                db.People.Add(person);
+                db.MaritalStatus.Add(maritalStatus);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.GenderId = new SelectList(db.Genders, "GenderId", "GenderName", person.GenderId);
-            return View(person);
+            return View(maritalStatus);
         }
 
-        // GET: /People/Edit/5
+        // GET: /MaritalStatus/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Person person = db.People.Find(id);
-            if (person == null)
+            MaritalStatus maritalStatus = db.MaritalStatus.Find(id);
+            if (maritalStatus == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.GenderId = new SelectList(db.Genders, "GenderId", "GenderName", person.GenderId);
-            return View(person);
+            return View(maritalStatus);
         }
 
-        // POST: /People/Edit/5
+        // POST: /MaritalStatus/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="PersonaId,Name,LastName,Email,Phone,NumberId,PassportId,GenderId,BirthData")] Person person)
+        public ActionResult Edit([Bind(Include="MaritalStatusId,MaritalStatustName")] MaritalStatus maritalStatus)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(person).State = EntityState.Modified;
+                db.Entry(maritalStatus).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.GenderId = new SelectList(db.Genders, "GenderId", "GenderName", person.GenderId);
-            return View(person);
+            return View(maritalStatus);
         }
 
-        // GET: /People/Delete/5
+        // GET: /MaritalStatus/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Person person = db.People.Find(id);
-            if (person == null)
+            MaritalStatus maritalStatus = db.MaritalStatus.Find(id);
+            if (maritalStatus == null)
             {
                 return HttpNotFound();
             }
-            return View(person);
+            return View(maritalStatus);
         }
 
-        // POST: /People/Delete/5
+        // POST: /MaritalStatus/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Person person = db.People.Find(id);
-            db.People.Remove(person);
+            MaritalStatus maritalStatus = db.MaritalStatus.Find(id);
+            db.MaritalStatus.Remove(maritalStatus);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

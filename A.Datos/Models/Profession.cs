@@ -14,6 +14,7 @@ namespace A.Datos.Models
         [Display(Name = "Profesion")]
         public string ProfessionName { get; set; }
 
-        
+        public virtual ICollection<Person> People { get; set; }
+
     }
 }
