@@ -15,6 +15,8 @@ namespace A.Datos.Models
         [DisplayName("Sistema")]
         public string ApplicationName { get; set; }
 
+        public ICollection<Profile> Profiles { get; set; }
+
         public ICollection<Page> Pages { get; set; }
     }
 }

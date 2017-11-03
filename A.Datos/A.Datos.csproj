@@ -182,6 +182,7 @@
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\Priority.cs" />
     <Compile Include="Models\Profession.cs" />
+    <Compile Include="Models\Profile.cs" />
     <Compile Include="Models\status.cs" />
     <Compile Include="Models\Ticketcreation.cs" />
     <Compile Include="Models\Type_Support.cs" />

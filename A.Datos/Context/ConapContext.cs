@@ -43,5 +43,7 @@ namespace A.Datos.Context
         public System.Data.Entity.DbSet<A.Datos.Models.User> Users { get; set; }
 
         public System.Data.Entity.DbSet<A.Datos.Models.UserStatus> UserStatus { get; set; }
+
+        public System.Data.Entity.DbSet<A.Datos.Models.Profile> Profiles { get; set; }
     }
 }
