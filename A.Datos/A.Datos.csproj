@@ -180,7 +180,11 @@
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Position.cs" />
+    <Compile Include="Models\Priority.cs" />
     <Compile Include="Models\Profession.cs" />
+    <Compile Include="Models\status.cs" />
+    <Compile Include="Models\Ticketcreation.cs" />
+    <Compile Include="Models\Type_Support.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserStatus.cs" />
     <Compile Include="Models\User_Type.cs" />
