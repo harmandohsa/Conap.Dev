@@ -10,10 +10,13 @@ namespace A.Datos.Models
     {
         [Key]
         public int UserId { get; set; }
-        public int EmployeeId { get; set; }
-        public virtual Employee Employee { get; set; }
 
+        public int EmployeeId { get; set; }
+        //public virtual Employee Employee { get; set; }
+
+        [Display(Name = "Usuario")]
         public string  UserName { get; set; }
+        [Display(Name = "Clave")]
         public string Password { get; set; }
         public int ChangePassword { get; set; }
 

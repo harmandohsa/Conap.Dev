@@ -1,4 +1,4 @@
-﻿@model A.Datos.Models.Profession
+﻿@model A.Datos.Models.Gender
 
 @{
     ViewBag.Title = "Editar";
@@ -31,7 +31,7 @@
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Editar Profesion</h5>
+                    <h5>Editar Genero</h5>
                 </div>
                 <div class="ibox-content">
 
@@ -42,13 +42,13 @@
     <div class="form-horizontal">
 
         @Html.ValidationSummary(true)
-        @Html.HiddenFor(model => model.ProfessiontId)
+        @Html.HiddenFor(model => model.GenderId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ProfessionName, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.GenderName, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ProfessionName)
-                @Html.ValidationMessageFor(model => model.ProfessionName)
+                @Html.EditorFor(model => model.GenderName)
+                @Html.ValidationMessageFor(model => model.GenderName)
             </div>
         </div>
 
