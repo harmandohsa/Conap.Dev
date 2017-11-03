@@ -1,7 +1,7 @@
-﻿@model IEnumerable<A.Datos.Models.Profession>
+﻿@model IEnumerable<A.Datos.Models.Gender>
 
 @{
-    ViewBag.Title = "Profesiones";
+    ViewBag.Title = "Generos";
 }
 
 <div class="row wrapper border-bottom white-bg page-heading">
@@ -9,7 +9,7 @@
         <h2>Inicio</h2>
         <ol class="breadcrumb">
             <li class="active">
-                <strong>Profesiones</strong>
+                <strong>Generos</strong>
             </li>
         </ol>
     </div>
@@ -21,7 +21,7 @@
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Listado de profesiones</h5>
+                    <h5>Listado de Generos</h5>
 					<div class="ibox-tools">
 						@Html.ActionLink("Nuevo", "Create", null, new { @class = "btn btn-primary btn-xs"})
 					</div>
@@ -31,7 +31,7 @@
 <table class="table table-striped">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ProfessionName)
+            @Html.DisplayNameFor(model => model.GenderName)
         </th>
         <th></th>
     </tr>
@@ -39,12 +39,12 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ProfessionName)
+            @Html.DisplayFor(modelItem => item.GenderName)
         </td>
         <td>
-			@*@Html.ActionLink("Details", "Details", new { id=item.ProfessiontId }, new { @class = "btn btn-primary btn-sm"})*@
-            @Html.ActionLink("Editar", "Edit", new { id=item.ProfessiontId }, new { @class = "btn btn-white btn-sm"})
-            @Html.ActionLink("Borrar", "Delete", new { id=item.ProfessiontId }, new { @class = "btn btn-white btn-sm"})
+			@*@Html.ActionLink("Details", "Details", new { id=item.GenderId }, new { @class = "btn btn-primary btn-sm"})*@
+            @Html.ActionLink("Editar", "Edit", new { id=item.GenderId }, new { @class = "btn btn-white btn-sm"})
+            @Html.ActionLink("Borrar", "Delete", new { id=item.GenderId }, new { @class = "btn btn-white btn-sm"})
         </td>
     </tr>
 }

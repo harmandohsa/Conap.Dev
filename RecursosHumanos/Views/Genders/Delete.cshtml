@@ -1,4 +1,4 @@
-﻿@model A.Datos.Models.MaritalStatus
+﻿@model A.Datos.Models.Gender
 
 @{
     ViewBag.Title = "Borrar";
@@ -29,17 +29,17 @@
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>Estado Civil</h5>
+                    <h5>Genero</h5>
                 </div>
                 <div class="ibox-content">
-				<h4 class="text-danger">Esta seguro que desea borrar este esado civil?</h4>
+				<h4 class="text-danger">Esta seguro de eliminar este genero?</h4>
 				 <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.MaritalStatustName)
+            @Html.DisplayNameFor(model => model.GenderName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.MaritalStatustName)
+            @Html.DisplayFor(model => model.GenderName)
         </dd>
 
     </dl>

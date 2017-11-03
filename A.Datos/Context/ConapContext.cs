@@ -39,5 +39,9 @@ namespace A.Datos.Context
         public System.Data.Entity.DbSet<A.Datos.Models.MaritalStatus> MaritalStatus { get; set; }
 
         public System.Data.Entity.DbSet<A.Datos.Models.Profession> Professions { get; set; }
+
+        public System.Data.Entity.DbSet<A.Datos.Models.User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<A.Datos.Models.UserStatus> UserStatus { get; set; }
     }
 }
