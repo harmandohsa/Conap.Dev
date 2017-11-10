@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using A.Datos.Models;
 using A.Datos.Context;
-
+using System.Web.UI;
 
 namespace RecursosHumanos.Controllers
 {
@@ -37,6 +37,7 @@ namespace RecursosHumanos.Controllers
                 else
                 {
                     ModelState.AddModelError("", "Usuario o clave incorrecto");
+                    
                 }
             }
             return View();
