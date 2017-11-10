@@ -15,8 +15,11 @@ namespace A.Datos.Models
         //public virtual Employee Employee { get; set; }
 
         [Display(Name = "Usuario")]
+        [Required(ErrorMessage = "Debe ingresar el usuario")]
         public string  UserName { get; set; }
+
         [Display(Name = "Clave")]
+        [Required(ErrorMessage = "Debe ingresar su clave")]
         public string Password { get; set; }
         public int ChangePassword { get; set; }
 
