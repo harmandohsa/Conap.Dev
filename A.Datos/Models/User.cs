@@ -26,5 +26,6 @@ namespace A.Datos.Models
         public int UserStatusId { get; set; }
         public virtual UserStatus UserStatus { get; set; }
 
+        public virtual ICollection<PermissionUser> PermissionsUsers { get; set; }
     }
 }

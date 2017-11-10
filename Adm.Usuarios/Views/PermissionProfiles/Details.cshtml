@@ -1,0 +1,106 @@
+﻿@model A.Datos.Models.PermissionProfile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Details</h2>
+        <ol class="breadcrumb">
+            <li>
+                @Html.ActionLink("List", "Index")
+            </li>
+            <li class="active">
+                <strong>Details</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Details PermissionProfile</h5>
+                </div>
+                <div class="ibox-content">
+
+
+				    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Page.PageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Page.PageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.profile.ProfileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.profile.ProfileName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Access)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Access)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Insert)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Insert)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Delete)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Delete)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Update)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Update)
+        </dd>
+
+    </dl>
+
+
+	    @Html.ActionLink("Edit", "Edit", new { id = Model.PermissionProfileId }, new { @class = "btn btn-primary"})
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-white"})
+
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
