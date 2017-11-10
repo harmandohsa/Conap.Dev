@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 
@@ -10,7 +11,13 @@ namespace A.Datos.Context
 {
     public class ConapContext : DbContext
     {
-        
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+        }
+
+
+
         public DbSet<Application> Applications { get; set; }
 
         public System.Data.Entity.DbSet<A.Datos.Models.Page> Pages { get; set; }
@@ -45,5 +52,9 @@ namespace A.Datos.Context
         public System.Data.Entity.DbSet<A.Datos.Models.UserStatus> UserStatus { get; set; }
 
         public System.Data.Entity.DbSet<A.Datos.Models.Profile> Profiles { get; set; }
+
+        public System.Data.Entity.DbSet<A.Datos.Models.PermissionProfile> PermissionProfiles { get; set; }
+
+        public System.Data.Entity.DbSet<A.Datos.Models.PermissionUser> PermissionUsers { get; set; }
     }
 }

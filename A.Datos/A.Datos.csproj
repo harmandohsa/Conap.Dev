@@ -178,6 +178,8 @@
     <Compile Include="Models\Municipality.cs" />
     <Compile Include="Models\OnsecPosition.cs" />
     <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\PermissionProfile.cs" />
+    <Compile Include="Models\PermissionUser.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Position.cs" />
     <Compile Include="Models\Priority.cs" />
@@ -188,7 +190,6 @@
     <Compile Include="Models\Type_Support.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserStatus.cs" />
-    <Compile Include="Models\User_Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

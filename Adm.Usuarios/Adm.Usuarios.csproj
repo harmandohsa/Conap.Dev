@@ -169,7 +169,9 @@
     <Compile Include="Controllers\ApplicationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PagesController.cs" />
-    <Compile Include="Controllers\User_TypeController.cs" />
+    <Compile Include="Controllers\PermissionProfilesController.cs" />
+    <Compile Include="Controllers\PermissionUsersController.cs" />
+    <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1616,6 +1618,21 @@
     <Content Include="Views\User_Type\Details.cshtml" />
     <Content Include="Views\User_Type\Edit.cshtml" />
     <Content Include="Views\User_Type\Index.cshtml" />
+    <Content Include="Views\PermissionProfiles\Create.cshtml" />
+    <Content Include="Views\PermissionProfiles\Delete.cshtml" />
+    <Content Include="Views\PermissionProfiles\Details.cshtml" />
+    <Content Include="Views\PermissionProfiles\Edit.cshtml" />
+    <Content Include="Views\PermissionProfiles\Index.cshtml" />
+    <Content Include="Views\PermissionUsers\Create.cshtml" />
+    <Content Include="Views\PermissionUsers\Delete.cshtml" />
+    <Content Include="Views\PermissionUsers\Details.cshtml" />
+    <Content Include="Views\PermissionUsers\Edit.cshtml" />
+    <Content Include="Views\PermissionUsers\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

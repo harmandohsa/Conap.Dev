@@ -18,5 +18,9 @@ namespace A.Datos.Models
         public int ApplicationId { get; set; }
 
         public virtual Application Applications { get; set; }
+
+        public virtual ICollection<PermissionProfile> PermissionsProfiles { get; set; }
+
+        public virtual ICollection<PermissionUser> PermissionsUsers { get; set; }
     }
 }

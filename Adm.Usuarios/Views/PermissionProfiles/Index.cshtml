@@ -1,0 +1,91 @@
+﻿@model IEnumerable<A.Datos.Models.PermissionProfile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-4">
+        <h2>Index</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <strong>PermissionProfile</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>List of PermissionProfile</h5>
+					<div class="ibox-tools">
+						@Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary btn-xs"})
+					</div>
+                </div>
+                <div class="ibox-content">
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Page.PageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profile.ProfileName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Access)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Insert)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Delete)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Update)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Page.PageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.profile.ProfileName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Access)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Insert)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Delete)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Update)
+        </td>
+        <td>
+			@Html.ActionLink("Details", "Details", new { id=item.PermissionProfileId }, new { @class = "btn btn-primary btn-sm"})
+            @Html.ActionLink("Edit", "Edit", new { id=item.PermissionProfileId }, new { @class = "btn btn-white btn-sm"})
+            @Html.ActionLink("Delete", "Delete", new { id=item.PermissionProfileId }, new { @class = "btn btn-white btn-sm"})
+        </td>
+    </tr>
+}
+
+</table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
